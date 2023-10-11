@@ -5,7 +5,7 @@ namespace Danstagram.Interactions.Service{
 
     public record LikeDto(Guid Id, Guid UserId,Guid FeedItemId);
 
-    public record CommentDto(Guid Id, Guid UserId,Guid FeedItemId,string Message, DateTimeOffset CreatedDate);
+    public record CommentDto(Guid Id, string UserName,Guid FeedItemId,string Message, DateTimeOffset CreatedDate);
 
     public record CreateCommentDto(Guid UserId,Guid FeedItemId,string Message);
 

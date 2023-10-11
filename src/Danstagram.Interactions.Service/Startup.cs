@@ -1,5 +1,4 @@
 using Danstagram.Common.MongoDB;
-using Danstagram.Identity.Service.Entities;
 using Danstagram.Interactions.Service.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
