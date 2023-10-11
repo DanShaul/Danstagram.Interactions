@@ -1,17 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Danstagram.Common.MongoDB;
+using Danstagram.Identity.Service.Entities;
 using Danstagram.Interactions.Service.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
 namespace Danstagram.Interactions.Service
@@ -37,7 +31,9 @@ namespace Danstagram.Interactions.Service
         {
             services.AddMongo()
                     .AddMongoRepository<Like>("likes")
-                    .AddMongoRepository<Comment>("comments");
+                    .AddMongoRepository<Comment>("comments")
+                    .AddMongoRepository<FeedItem>("feeditems")
+                    .AddMongoRepository<IdentityItem>("identities");
 
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;
