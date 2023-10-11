@@ -10,5 +10,6 @@ namespace Danstagram.Interactions.Service{
     public record CreateCommentDto(Guid UserId,Guid FeedItemId,string Comment);
 
     public record CreateLikeDto(Guid UserId,Guid FeedItemId);
+    
     #endregion
 }
