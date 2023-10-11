@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Danstagram.Common;
 using Danstagram.Interactions.Service.Entities;
+using MassTransit;
+using MassTransit.Transports;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Danstagram.Interactions.Service.Controllers{
@@ -11,20 +13,23 @@ namespace Danstagram.Interactions.Service.Controllers{
     [Route("interactions")]
     public class InteractionsController : ControllerBase{
         #region Cosntructors
-        public InteractionsController(IRepository<FeedItem> feedItemsRepository,IRepository<Comment> commentsRepository,IRepository<Like> likesRepository,IRepository<Identity> identitiesRepository){
+        public InteractionsController(IRepository<FeedItem> feedItemsRepository,IRepository<Comment> commentsRepository,IRepository<Like> likesRepository,IRepository<Identity> identitiesRepository, IPublishEndpoint publishEndpoint){
 
             this.feedItemsRepository = feedItemsRepository;
             this.commentsRepository = commentsRepository;
             this.likesRepository = likesRepository;
             this.identitiesRepository = identitiesRepository;
+            this.publishEndpoint = publishEndpoint;
 
         }
         #endregion
+
         #region Properties
         private readonly IRepository<FeedItem> feedItemsRepository;
         private readonly IRepository<Comment> commentsRepository;
         private readonly IRepository<Like> likesRepository;
         private readonly IRepository<Identity> identitiesRepository;
+        private readonly IPublishEndpoint publishEndpoint;
 
         #endregion
         #region Methods
