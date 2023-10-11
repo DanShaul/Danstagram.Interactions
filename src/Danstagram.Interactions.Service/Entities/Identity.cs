@@ -1,8 +1,8 @@
 using System;
 using Danstagram.Common;
 
-namespace Danstagram.Identity.Service.Entities{
-    public class IdentityItem:IEntity{
+namespace Danstagram.Interactions.Service.Entities{
+    public class Identity:IEntity{
         
         #region Properties
 

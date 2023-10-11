@@ -33,7 +33,7 @@ namespace Danstagram.Interactions.Service
                     .AddMongoRepository<Like>("likes")
                     .AddMongoRepository<Comment>("comments")
                     .AddMongoRepository<FeedItem>("feeditems")
-                    .AddMongoRepository<IdentityItem>("identities");
+                    .AddMongoRepository<Identity>("identities");
 
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;

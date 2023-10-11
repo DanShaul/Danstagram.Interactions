@@ -1,7 +1,7 @@
 using System;
 using Danstagram.Common;
 
-namespace Danstagram.Identity.Service.Entities{
+namespace Danstagram.Interactions.Service.Entities{
     public class FeedItem : IEntity{
 
         #region Properties
