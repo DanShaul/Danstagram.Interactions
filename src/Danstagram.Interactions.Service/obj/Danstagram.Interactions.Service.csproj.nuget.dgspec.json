@@ -4,14 +4,14 @@
     "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\Danstagram.Interactions.Service.csproj": {}
   },
   "projects": {
-    "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\Danstagram.Interactions.Service.csproj": {
+    "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Contracts\\Danstagram.Interactions.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\Danstagram.Interactions.Service.csproj",
-        "projectName": "Danstagram.Interactions.Service",
-        "projectPath": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\Danstagram.Interactions.Service.csproj",
+        "projectUniqueName": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Contracts\\Danstagram.Interactions.Contracts.csproj",
+        "projectName": "Danstagram.Interactions.Contracts",
+        "projectPath": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Contracts\\Danstagram.Interactions.Contracts.csproj",
         "packagesPath": "C:\\Users\\dansh\\.nuget\\packages\\",
-        "outputPath": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\obj\\",
+        "outputPath": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,10 +45,83 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\Danstagram.Interactions.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\Danstagram.Interactions.Service.csproj",
+        "projectName": "Danstagram.Interactions.Service",
+        "projectPath": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\Danstagram.Interactions.Service.csproj",
+        "packagesPath": "C:\\Users\\dansh\\.nuget\\packages\\",
+        "outputPath": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dansh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Contracts\\Danstagram.Interactions.Contracts.csproj": {
+                "projectPath": "D:\\Necessary\\Open Uni Matalot\\Sadna Be Tihnut monhe atzamim\\Danstagram\\Danstagram.Interactions\\src\\Danstagram.Interactions.Contracts\\Danstagram.Interactions.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Danstagram.Common": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[1.0.4, )"
+            },
+            "Danstagram.Feed.Contracts": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Danstagram.Identities.Contracts": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -61,7 +134,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -73,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

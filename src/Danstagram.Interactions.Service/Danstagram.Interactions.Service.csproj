@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Danstagram.Common" Version="1.0.2" />
+    <PackageReference Include="Danstagram.Common" Version="1.0.4" />
+    <PackageReference Include="Danstagram.Feed.Contracts" Version="1.0.1" />
+    <PackageReference Include="Danstagram.Identities.Contracts" Version="1.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
