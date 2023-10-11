@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Danstagram.Common;
+using Danstagram.Interactions.Contracts;
 using Danstagram.Interactions.Service.Entities;
 using MassTransit;
 using MassTransit.Transports;
@@ -107,6 +108,7 @@ namespace Danstagram.Interactions.Service.Controllers{
             if (validationResponse != null) return validationResponse;
 
             await commentsRepository.CreateAsync(comment);
+            await publishEndpoint.Publish(new CommentCreated(comment.Id,comment.UserId,comment.FeedItemId,comment.Message,comment.CreatedDate));
 
             return CreatedAtAction(nameof(GetCommentByIdAsync),new{id = comment.Id},comment);
         }
@@ -124,6 +126,7 @@ namespace Danstagram.Interactions.Service.Controllers{
             if (validationResponse != null) return validationResponse;
 
             await likesRepository.CreateAsync(like);
+            await publishEndpoint.Publish(new LikeCreated(like.Id,like.UserId,like.FeedItemId));
 
             return CreatedAtAction(nameof(GetLikeByIdAsync),new{Id = like.Id},like);
         }
@@ -132,7 +135,9 @@ namespace Danstagram.Interactions.Service.Controllers{
         [HttpDelete]
         public async Task<ActionResult> DeleteLikeAsync(Guid id) {
             if(likesRepository.GetAsync(id) == null) return NoContent();
+
             await likesRepository.RemoveAsync(id);
+            await publishEndpoint.Publish(new LikeDeleted(id));
 
             return Ok();
         }
@@ -141,8 +146,10 @@ namespace Danstagram.Interactions.Service.Controllers{
         [HttpDelete]
         public async Task<ActionResult> DeleteCommentsAsync(Guid id) {
             if(commentsRepository.GetAsync(id) == null) return NoContent();
-            await commentsRepository.RemoveAsync(id);
 
+            await commentsRepository.RemoveAsync(id);
+            await publishEndpoint.Publish(new CommentDeleted(id));
+            
             return Ok();
         }
         private async Task<ActionResult> ValidateInteractionAsync<T>(T t) where T : Interaction{

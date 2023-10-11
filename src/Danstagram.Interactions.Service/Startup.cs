@@ -1,5 +1,7 @@
+using Danstagram.Common.MassTransit;
 using Danstagram.Common.MongoDB;
 using Danstagram.Interactions.Service.Entities;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -32,7 +34,8 @@ namespace Danstagram.Interactions.Service
                     .AddMongoRepository<Like>("likes")
                     .AddMongoRepository<Comment>("comments")
                     .AddMongoRepository<FeedItem>("feeditems")
-                    .AddMongoRepository<Identity>("identities");
+                    .AddMongoRepository<Identity>("identities")
+                    .AddMassTransitWithRabbitMQ();
 
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;
