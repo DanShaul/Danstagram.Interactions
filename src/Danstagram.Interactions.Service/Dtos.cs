@@ -5,11 +5,11 @@ namespace Danstagram.Interactions.Service{
 
     public record LikeDto(Guid Id, Guid UserId,Guid FeedItemId);
 
-    public record CommentDto(Guid Id, Guid UserId,Guid FeedItemId,string Comment, DateTimeOffset CreatedDate);
+    public record CommentDto(Guid Id, Guid UserId,Guid FeedItemId,string Message, DateTimeOffset CreatedDate);
 
-    public record CreateCommentDto(Guid UserId,Guid FeedItemId,string Comment);
+    public record CreateCommentDto(Guid UserId,Guid FeedItemId,string Message);
 
     public record CreateLikeDto(Guid UserId,Guid FeedItemId);
-    
+
     #endregion
 }
