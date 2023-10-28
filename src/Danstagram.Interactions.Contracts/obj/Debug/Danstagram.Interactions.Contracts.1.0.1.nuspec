@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Danstagram.Interactions.Contracts</id>
+    <version>1.0.1</version>
+    <authors>Danstagram.Interactions.Contracts</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Necessary\Open Uni Matalot\Sadna Be Tihnut monhe atzamim\Danstagram\Danstagram.Interactions\src\Danstagram.Interactions.Contracts\bin\Debug\net5.0\Danstagram.Interactions.Contracts.dll" target="lib\net5.0\Danstagram.Interactions.Contracts.dll" />
+  </files>
+</package>

@@ -8,5 +8,5 @@ D:\Necessary\Open Uni Matalot\Sadna Be Tihnut monhe atzamim\Danstagram\Danstagra
 D:\Necessary\Open Uni Matalot\Sadna Be Tihnut monhe atzamim\Danstagram\Danstagram.Interactions\src\Danstagram.Interactions.Contracts\obj\Debug\net5.0\Danstagram.Interactions.Contracts.dll
 D:\Necessary\Open Uni Matalot\Sadna Be Tihnut monhe atzamim\Danstagram\Danstagram.Interactions\src\Danstagram.Interactions.Contracts\obj\Debug\net5.0\Danstagram.Interactions.Contracts.pdb
 D:\Necessary\Open Uni Matalot\Sadna Be Tihnut monhe atzamim\Danstagram\Danstagram.Interactions\src\Danstagram.Interactions.Contracts\obj\Debug\net5.0\ref\Danstagram.Interactions.Contracts.dll
-D:\Necessary\Open Uni Matalot\Sadna Be Tihnut monhe atzamim\Danstagram\Danstagram.Interactions\src\Danstagram.Interactions.Contracts\bin\Debug\net5.0\ref\Danstagram.Interactions.Contracts.dll
 D:\Necessary\Open Uni Matalot\Sadna Be Tihnut monhe atzamim\Danstagram\Danstagram.Interactions\src\Danstagram.Interactions.Contracts\obj\Debug\net5.0\Danstagram.Interactions.Contracts.csproj.AssemblyReference.cache
+D:\Necessary\Open Uni Matalot\Sadna Be Tihnut monhe atzamim\Danstagram\Danstagram.Interactions\src\Danstagram.Interactions.Contracts\obj\Debug\net5.0\refint\Danstagram.Interactions.Contracts.dll
